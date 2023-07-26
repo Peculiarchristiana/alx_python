@@ -1,12 +1,16 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-number_string = repr (number) 
-last_digit_string = number_string[-1]
-last_digit = int(last_digit_string)
-if last_digit (number) > 5: 
-     print (f"Last digit of (number) is last_digit and is greater than 5") 
-if last_digit (number) == 0: 
-     print (f"Last digit of (number) is last_digit and is 0") 
-if last_digit (number) < 6  and last_digit (number) != 0: 
-     print (f"Last digit of (number) is last_digit and is less than 6 and not 0") 
+# Get the last digit of the number
+number_str = str(number) 
+last_digit = int(number_str[-1])
+
+# Print the result based on the last digit
+print(f"The Last digit of {number} is {last_digit}", end=" ")
+
+if last_digit > 5: 
+     print (f"and is greater than 5") 
+if last_digit  == 0: 
+     print (f"and is 0") 
+if last_digit < 6  and last_digit != 0: 
+     print (f"Last digit of {number} is {last_digit} and is less than 6 and not 0") 
