@@ -1,2 +1,2 @@
 for i in range(99):
-    print ("{} = Ox{:X}".format(i, i))
+    print ("{} = O x {:X}".format(i, i))
