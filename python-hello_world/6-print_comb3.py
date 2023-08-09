@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 # Python program to print all 
 # differnt combinations of two digits
-for i in range(1,11):
-    for j in range(i + 1, 99):
-        print("{:02}, {:02}", format (i), end=', ')
+for i in range(1, 10):
+    for j in range(i + 1, 10):
+        if i == 1:
+            print("{:02d}".format(i), end=', ')
     if i != 9:
-        print(f"{i:02}, 10", end=', ')
+        print("{:02d}".format(i), end=', ')
     else:
-        print("11, 10")
-
+        print("09")
 
              
